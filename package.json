@@ -1,0 +1,24 @@
+{
+  "name": "photo-capture",
+  "version": "1.0.0",
+  "description": "This library is used to snap image from the media stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gagan-bhullar-tech/photo-capture.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Image",
+    "Capture"
+  ],
+  "author": "Gagan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gagan-bhullar-tech/photo-capture/issues"
+  },
+  "homepage": "https://github.com/gagan-bhullar-tech/photo-capture#readme"
+}
