@@ -17,13 +17,13 @@ Photo Capture is a JavaScript library that allows you to capture images from a m
     Initialize the library with the following options:
 
     ```html
-    <video autoplay></video>
+    <video id="videoElement" autoplay></video>
     ```
 
 2. Include the library in your JavaScript file:
 
     ```javascript
-    const photoCapture = new PhotoCapture(document.getElementById('video'));
+    const photoCapture = new PhotoCapture(document.getElementById('videoElement'));
     ```
 
     You can call the following methods on the `photoCapture` object:
