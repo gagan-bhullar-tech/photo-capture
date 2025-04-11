@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This library is used to snap image from the media stream",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +14,8 @@
   "keywords": [
     "JavaScript",
     "Image",
-    "Capture"
+    "Capture",
+    "Camera"
   ],
   "author": "Gagan",
   "license": "MIT",
