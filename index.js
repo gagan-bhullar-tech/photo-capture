@@ -1,4 +1,4 @@
-export class PhotoCapture {
+export default class PhotoCapture {
     constructor(videoElement) {
         if (!(videoElement instanceof HTMLVideoElement)) {
             throw new Error("videoElement must be an instance of HTMLVideoElement");
@@ -20,7 +20,6 @@ export class PhotoCapture {
             .then((stream) => {
                 this.videoElement.srcObject = stream;
                 this.videoElement.play();
-                this.stopCamera();
             })
             .catch((error) => {
                 throw new Error("Error accessing camera: " + error);
@@ -40,7 +39,7 @@ export class PhotoCapture {
         }
     }
 
-    capture() {
+    capturePhoto() {
         if (!this.videoElement.srcObject) {
             throw new Error("Camera not started");
             return;
