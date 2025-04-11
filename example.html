@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="capture">Capture</button>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script type="module">
+        import PhotoCapture from "./index.js";
+        const video = document.getElementById("video");
+        const photoCapture = new PhotoCapture(video);
+        photoCapture.startCamera();
+        const captureButton = document.getElementById("capture");
+        captureButton.addEventListener("click", () => {
+            const photo = photoCapture.capturePhoto();
+            const img = document.createElement("img");
+            img.src = photo;
+            document.body.appendChild(img);
+        });
+        const startButton = document.getElementById("start");
+        startButton.addEventListener("click", () => {
+            photoCapture.startCamera();
+        });
+        const stopButton = document.getElementById("stop");
+        stopButton.addEventListener("click", () => {
+            photoCapture.stopCamera();
+        });
+    </script>
+</body>
+</html>
